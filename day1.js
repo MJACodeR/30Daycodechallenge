@@ -3,7 +3,7 @@
 // let myHomeName = "abhishek";
 // let AnotherName = myHomeName;
 // AnotherName = "MJ"
-// console.log(AnotherName);
+ console.log(AnotherName);
 // console.log(myHomeName);
 
 // JS-A1#2
