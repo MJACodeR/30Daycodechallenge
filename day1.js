@@ -6,7 +6,7 @@
 // console.log(AnotherName);
 // console.log(myHomeName);
 
-//JS-A1#2
+// JS-A1#2
 
 
 //task1
