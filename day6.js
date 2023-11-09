@@ -17,9 +17,7 @@ const dummyUser = {
 
 // Middleware to verify JWT token
 const verifyToken = (req, res, next) => {
-  const token = req.body;
-  console.log(token);
-  console.log(secretKey);
+  const token = req.headers['authorization'];
   if (!token) {
     return res.status(403).json({ message: 'Unauthorized' });
   }
@@ -28,7 +26,6 @@ const verifyToken = (req, res, next) => {
       return res.status(403).json({ message: 'Invalid token' });
     }
     req.user = user;
-    console.log(req.user);
     next();
   });
 };
@@ -52,8 +49,8 @@ app.post('/logout', (req, res) => {
 });
 
 // Protected route
-app.get('/protected', verifyToken, (req, res) => {
-  res.json({ message: 'This is a protected route', user: req.user });
+app.get('/profile', verifyToken, (req, res) => {
+  res.json({ message: 'this your profile age', user: req.user });
 });
 
 app.listen(PORT, () => {
