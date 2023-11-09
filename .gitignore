@@ -1,5 +1,4 @@
-/day1
-/day2
-/day3
-/day4
-
+/node_modules
+/package.json
+/package-lock.json
+/text.txt
