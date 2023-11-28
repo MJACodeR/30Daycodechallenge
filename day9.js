@@ -4,7 +4,7 @@ function Person(name, age) {
   this.name = name;
 }
 let person = new Person("abhi", 32);
-console.log(person.age);
+// console.log(person.age);
 //How do you create an object using prototypal inheritance in JavaScript?
 let emp = {
   name: "amardeep",
@@ -17,16 +17,16 @@ let emp = {
 
 let emps = Object.create(emp);
 emps.jobTitle = "Software Developer";
-console.log(emp.details());
+// console.log(emp.details());
 
 //arr
 let arr = [1, 2, 3];
 for (let i = 0; i < arr.length; i++) {
-  console.log(i);
+//   console.log(i);
 }
 let arr2 = [1, 2, 3];
 arr2.forEach(function(element) {
-console.log(element);
+// console.log(element);
 });
 //obj
 let obj = { a: 1, b: 2 };
